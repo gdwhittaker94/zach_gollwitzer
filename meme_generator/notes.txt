@@ -1,0 +1,30 @@
+**Practice: Inserting content into left sections**
+
+1. Select empty div container that will house generated meme
+
+    const memeHiddenContainer = document.querySelector('#meme');
+
+2. Check to see if it outputs (i.e. we've selected correct element)
+
+    console.log(memeHiddenContainer) ✅
+
+3. Create new element in the empty div, and as it's an img element we are obligated to add a 'src' attribute and a value
+
+    const newElement = document.createElement('img');
+    newElement.setAttribute('src', 'https://i.redd.it/a0v87gwzoge61.jpg')
+
+4. Insert this new element into div container
+
+    memeHiddenContainer.appendChild(newElement) ✅
+
+
+**LEARNED**
+
+JS
+- function showQuote() --> the value is an object with two properties inside it (quote + author). Therefore, have to use the dot syntax in order to access those properties their content (not array selector syntax!).
+
+- Visualise the process as just looking at the lines of code doesn't help me write it or understand it (draw on paper if necessary).
+
+- Writing ".innerHTML = ''" (an empty string value) clears the content of an element.
+
+- for .querySelector() don't forget to add a # or . in order to grab onto HTML elements!

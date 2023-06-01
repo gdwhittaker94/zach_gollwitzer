@@ -1,0 +1,34 @@
+Original video: https://youtu.be/zJSY8tbf_ys?t=44636
+
+***REQS***
+- Clicking buttons on the right side of the screen generates a random meme, joke, quote, or riddle
+
+- Only one piece of content should show at a time (e.g. If the user clicks "Show a meme" and there is a quote showing already, the browser should remove the quote and show a random meme).
+
+- Content should be displayed under the appropriate heading (e.g. a joke should not show up under the memes heading).
+
+- When showing a random riddle, the answer shouldn't appear with it. It should only reveal when the user clicks "Reveal Riddle Answer" button.
+
+- If a user clicks "Reveal Riddle Answer" and there is no riddle, an alert should let them know they need to generate a riddle first.
+
+- If a user clicks "Reveal Riddle Answer" and the answer is already revealed, an alert should let them know that the answer is already revealed.
+
+***HINTS***
+- A div with a unique id/class can be a great way to establish a "container" for future content (even before that content exists).
+
+- For the riddles you might need the 'HTMLElement.hidden' property
+
+- There's no "perfect" solution. Just various solutions.
+
+- The starter code has some code already in place. Read it and understand it. You should be able to solve this without adding any additional information.
+
+
+***MY THOUGHTS/PLAN***
+Hidden div elements below the paragraphs that appear and disappear
+when user clicks the buttons.
+
+Event listeners on the divs --> refactor traditional event listeners in HTML?
+
+memes, jokes, quotes and riddles are already stored in arrays --> just need to produce a random number which selects random index within array in order to produce random content on screen.
+
+Riddle data: objects? two properties 'question' and 'answer'. He suggests using 'HTMLElement.hidden' property (investigate it) for not revealing answer part...
